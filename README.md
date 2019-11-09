@@ -1,6 +1,6 @@
 # strcaseconv
 
-## Overview [![GoDoc](https://godoc.org/github.com/sazor/strcaseconv?status.svg)](https://godoc.org/github.com/sazor/strcaseconv) [![Go Report Card](https://goreportcard.com/badge/github.com/sazor/strcaseconv)](https://goreportcard.com/report/github.com/sazor/strcaseconv)
+## Overview [![GoDoc](https://godoc.org/github.com/sazor/strcaseconv?status.svg)](https://godoc.org/github.com/sazor/strcaseconv) [![Go Report Card](https://goreportcard.com/badge/github.com/sazor/strcaseconv)](https://goreportcard.com/report/github.com/sazor/strcaseconv) [![License](https://img.shields.io/github/license/sazor/strcaseconv)](https://github.com/sazor/strcaseconv) [![Go version](https://img.shields.io/badge/go-v1.10-blue)](https://github.com/sazor/strcaseconv)
 
 String case converter inspired by stdlib `strings` package. Fast and simple. Conversions make only 1 allocation of resulting string if changes are needed, otherwise, original string is returned.
 
@@ -14,15 +14,15 @@ go get github.com/sazor/strcaseconv
 
 ## Example
 
-```
-SnakeToUpperCamel("foo_bar") // FooBar
-SnakeToLowerCamel("foo_bar") // fooBar
-KebabToUpperCamel("foo-bar") // FooBar
-KebabToLowerCamel("foo-bar") // fooBar
-CamelToSnake("FooBar") // foo_bar
-CamelToKebab("fooBar") // foo-bar
-SnakeToKebab("foo_bar") // foo-bar
-KebabToSnake("foo-bar") // foo_bar
+```go
+strcaseconv.SnakeToUpperCamel("foo_bar") // FooBar
+strcaseconv.SnakeToLowerCamel("foo_bar") // fooBar
+strcaseconv.KebabToUpperCamel("foo-bar") // FooBar
+strcaseconv.KebabToLowerCamel("foo-bar") // fooBar
+strcaseconv.CamelToSnake("FooBar") // foo_bar
+strcaseconv.CamelToKebab("fooBar") // foo-bar
+strcaseconv.SnakeToKebab("foo_bar") // foo-bar
+strcaseconv.KebabToSnake("foo-bar") // foo_bar
 ```
 
 ## License
